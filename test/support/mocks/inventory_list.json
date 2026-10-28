@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "productId": "33333333-3333-3333-3333-333333333331",
+      "name": "Sữa chua Vinamilk",
+      "category": "Thực phẩm",
+      "quantity": 2,
+      "unit": "hộp",
+      "expiryDate": "2026-09-22",
+      "expiryLevel": "soon",
+      "status": "in_stock"
+    },
+    {
+      "productId": "33333333-3333-3333-3333-333333333332",
+      "name": "Sữa tươi TH",
+      "category": "Thực phẩm",
+      "quantity": 1,
+      "unit": "hộp",
+      "expiryDate": "2026-09-10",
+      "expiryLevel": "expired",
+      "status": "in_stock"
+    },
+    {
+      "productId": "33333333-3333-3333-3333-333333333333",
+      "name": "Nước mắm",
+      "category": "Gia vị",
+      "quantity": 1,
+      "unit": "chai",
+      "expiryDate": "2027-03-18",
+      "expiryLevel": "ok",
+      "status": "in_stock"
+    },
+    {
+      "productId": "33333333-3333-3333-3333-333333333334",
+      "name": "Trứng",
+      "category": "Thực phẩm",
+      "quantity": 0,
+      "unit": "quả",
+      "expiryDate": null,
+      "expiryLevel": "ok",
+      "status": "out"
+    }
+  ],
+  "total": 4
+}

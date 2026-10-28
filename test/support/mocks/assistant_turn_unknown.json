@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0",
+  "turnId": "eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee",
+  "kind": "unknown",
+  "dictionaryVersion": "1.1.0",
+  "correctedInput": "Bật đèn phòng khách giúp tôi.",
+  "processingTimeMs": 400,
+  "toolsUsed": [
+    {
+      "toolId": "unknown",
+      "arguments": {}
+    }
+  ],
+  "data": null,
+  "message": "HomeMind chưa hỗ trợ điều khiển thiết bị nhà. Bạn có thể hỏi tồn kho, hạn sử dụng, danh sách mua sắm hoặc thêm hàng vào kho.",
+  "warnings": []
+}

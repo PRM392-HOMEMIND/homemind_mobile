@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "turnId": "dddddddd-dddd-dddd-dddd-dddddddddddd",
+  "kind": "clarify",
+  "dictionaryVersion": "1.1.0",
+  "correctedInput": "Yêu cầu chưa rõ",
+  "processingTimeMs": 600,
+  "toolsUsed": [
+    {
+      "toolId": "clarify",
+      "arguments": {
+        "question": "HomeMind chưa hiểu rõ câu lệnh. Bạn có thể nói: 'Kiểm tra giỏ hàng', 'Hôm nay cần mua gì', hoặc 'Mới mua 2 hộp sữa'."
+      }
+    }
+  ],
+  "data": null,
+  "message": "HomeMind chưa hiểu rõ câu lệnh. Bạn có thể nói: 'Kiểm tra giỏ hàng', 'Hôm nay cần mua gì', hoặc 'Mới mua 2 hộp sữa'.",
+  "warnings": []
+}

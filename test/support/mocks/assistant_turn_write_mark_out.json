@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0",
+  "turnId": "b1111111-bbbb-bbbb-bbbb-bbbbbbbbbbb1",
+  "kind": "write_draft",
+  "dictionaryVersion": "1.1.0",
+  "correctedInput": "Hết sữa rồi.",
+  "processingTimeMs": 900,
+  "requiresConfirmation": true,
+  "toolsProposed": [
+    {
+      "toolId": "inventory.mark_out",
+      "arguments": {
+        "productName": "Sữa",
+        "productId": null,
+        "quantity": null,
+        "addToShoppingList": null,
+        "confidence": {
+          "productName": 0.82
+        },
+        "warnings": [
+          "Chưa rõ muốn mua lại hay không. Bạn có thể bật thêm vào list mua trên màn xác nhận."
+        ]
+      }
+    }
+  ],
+  "message": "Bạn muốn đánh hết Sữa. Hãy xác nhận trước khi cập nhật kho.",
+  "warnings": []
+}

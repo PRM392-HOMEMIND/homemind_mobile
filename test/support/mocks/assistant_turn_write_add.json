@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0",
+  "turnId": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+  "kind": "write_draft",
+  "dictionaryVersion": "1.1.0",
+  "correctedInput": "Tôi mới mua đường, hạn sử dụng cuối tháng 4 năm nay.",
+  "processingTimeMs": 1680,
+  "requiresConfirmation": true,
+  "toolsProposed": [
+    {
+      "toolId": "inventory.add",
+      "arguments": {
+        "productName": "Đường",
+        "quantity": 1,
+        "unit": "kg",
+        "category": "Gia vị",
+        "expiryDate": "2026-04-30",
+        "productCandidateId": null,
+        "importPrice": null,
+        "sellPrice": null,
+        "confidence": {
+          "productName": 0.96,
+          "quantity": 0.7,
+          "unit": 0.75,
+          "expiryDate": 0.92,
+          "category": 0.88
+        },
+        "warnings": [
+          "Số lượng và đơn vị được suy từ ngữ cảnh; hãy kiểm tra trước khi xác nhận."
+        ]
+      }
+    }
+  ],
+  "message": "Tôi hiểu bạn muốn thêm Đường vào kho với hạn 30/04/2026. Hãy xác nhận trước khi lưu.",
+  "warnings": []
+}

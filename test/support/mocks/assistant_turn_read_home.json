@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0",
+  "turnId": "a3333333-aaaa-aaaa-aaaa-aaaaaaaaaaa3",
+  "kind": "read_result",
+  "dictionaryVersion": "1.1.0",
+  "correctedInput": "Tóm tắt kho giúp tôi.",
+  "processingTimeMs": 850,
+  "toolsUsed": [
+    {
+      "toolId": "home.summary",
+      "arguments": {}
+    }
+  ],
+  "data": {
+    "toolId": "home.summary",
+    "totalProducts": 4,
+    "inStockCount": 3,
+    "outCount": 1,
+    "expiredCount": 1,
+    "expiringSoonCount": 1,
+    "shoppingNeededCount": 2,
+    "freePlanLimit": 30,
+    "productCountTowardLimit": 4,
+    "expiringSoon": [
+      {
+        "productId": "33333333-3333-3333-3333-333333333331",
+        "name": "Sữa chua Vinamilk",
+        "category": "Thực phẩm",
+        "expiryDate": "2026-09-22",
+        "expiryLevel": "soon",
+        "quantity": 2,
+        "unit": "hộp"
+      }
+    ],
+    "expired": [
+      {
+        "productId": "33333333-3333-3333-3333-333333333332",
+        "name": "Sữa tươi TH",
+        "category": "Thực phẩm",
+        "expiryDate": "2026-09-10",
+        "expiryLevel": "expired",
+        "quantity": 1,
+        "unit": "hộp"
+      }
+    ],
+    "alerts": []
+  },
+  "message": "Nhà bạn có 4 sản phẩm: 3 còn hàng, 1 hết. Có 1 món sắp hết hạn và 1 món đã hết hạn. List mua còn 2 món.",
+  "warnings": []
+}
