@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "1.0",
+  "turnId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+  "kind": "read_result",
+  "dictionaryVersion": "1.1.0",
+  "correctedInput": "Tháng này sản phẩm nào sắp hết hạn?",
+  "processingTimeMs": 1520,
+  "toolsUsed": [
+    {
+      "toolId": "inventory.expiring",
+      "arguments": {
+        "range": "this_month",
+        "includeExpired": true
+      }
+    }
+  ],
+  "data": {
+    "toolId": "inventory.expiring",
+    "range": "this_month",
+    "from": "2026-09-01",
+    "to": "2026-09-30",
+    "items": [
+      {
+        "productId": "33333333-3333-3333-3333-333333333331",
+        "lotId": "44444444-4444-4444-4444-444444444441",
+        "name": "Sữa chua Vinamilk",
+        "category": "Thực phẩm",
+        "quantity": 2,
+        "unit": "hộp",
+        "expiryDate": "2026-09-22",
+        "expiryLevel": "soon",
+        "status": "in_stock"
+      },
+      {
+        "productId": "33333333-3333-3333-3333-333333333332",
+        "lotId": "44444444-4444-4444-4444-444444444442",
+        "name": "Sữa tươi TH",
+        "category": "Thực phẩm",
+        "quantity": 1,
+        "unit": "hộp",
+        "expiryDate": "2026-09-10",
+        "expiryLevel": "expired",
+        "status": "in_stock"
+      }
+    ]
+  },
+  "message": "Trong tháng 9 bạn có 2 sản phẩm liên quan hạn sử dụng: 1 sắp hết hạn và 1 đã hết hạn.",
+  "warnings": []
+}

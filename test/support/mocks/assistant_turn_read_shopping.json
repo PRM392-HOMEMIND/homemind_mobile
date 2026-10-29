@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0",
+  "turnId": "a2222222-aaaa-aaaa-aaaa-aaaaaaaaaaa2",
+  "kind": "read_result",
+  "dictionaryVersion": "1.1.0",
+  "correctedInput": "Đang đi chợ, hôm nay cần mua gì?",
+  "processingTimeMs": 1200,
+  "toolsUsed": [
+    {
+      "toolId": "shopping.list",
+      "arguments": {
+        "status": "needed",
+        "includeSuggestions": true
+      }
+    }
+  ],
+  "data": {
+    "toolId": "shopping.list",
+    "items": [
+      {
+        "id": "66666666-6666-6666-6666-666666666661",
+        "name": "Trứng",
+        "quantity": 10,
+        "unit": "quả",
+        "status": "needed",
+        "source": "manual"
+      },
+      {
+        "id": "66666666-6666-6666-6666-666666666662",
+        "name": "Bánh mì",
+        "quantity": 1,
+        "unit": "ổ",
+        "status": "needed",
+        "source": "manual"
+      }
+    ],
+    "suggestions": [
+      {
+        "name": "Sữa tươi TH",
+        "reason": "expired",
+        "productId": "33333333-3333-3333-3333-333333333332"
+      }
+    ],
+    "total": 2
+  },
+  "message": "Hôm nay cần mua 2 món: Trứng, Bánh mì. Gợi ý thêm Sữa tươi TH vì đã hết hạn.",
+  "warnings": []
+}

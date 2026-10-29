@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0",
+  "turnId": "cccccccc-cccc-cccc-cccc-cccccccccccc",
+  "kind": "write_draft",
+  "dictionaryVersion": "1.1.0",
+  "correctedInput": "Nhớ mua nước mắm với trứng.",
+  "processingTimeMs": 1100,
+  "requiresConfirmation": true,
+  "toolsProposed": [
+    {
+      "toolId": "shopping.add",
+      "arguments": {
+        "items": [
+          {
+            "name": "Nước mắm",
+            "quantity": null,
+            "unit": null,
+            "source": "voice"
+          },
+          {
+            "name": "Trứng",
+            "quantity": null,
+            "unit": null,
+            "source": "voice"
+          }
+        ],
+        "confidence": {
+          "items": 0.94
+        },
+        "warnings": []
+      }
+    }
+  ],
+  "message": "Thêm 2 món vào danh sách mua sắm: Nước mắm, Trứng. Xác nhận để lưu.",
+  "warnings": []
+}

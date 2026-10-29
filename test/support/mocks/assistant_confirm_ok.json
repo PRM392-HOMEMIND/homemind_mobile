@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "1.0",
+  "turnId": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+  "kind": "write_committed",
+  "ok": true,
+  "created": {
+    "productIds": ["33333333-3333-3333-3333-333333333339"],
+    "lotIds": ["44444444-4444-4444-4444-444444444449"],
+    "transactionIds": ["55555555-5555-5555-5555-555555555559"],
+    "shoppingItemIds": []
+  },
+  "message": "Đã lưu vào kho thành công (mock)."
+}

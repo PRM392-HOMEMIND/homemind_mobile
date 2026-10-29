@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0",
+  "turnId": "a1111111-aaaa-aaaa-aaaa-aaaaaaaaaaa1",
+  "kind": "read_result",
+  "dictionaryVersion": "1.1.0",
+  "correctedInput": "Trong nhà còn những sản phẩm nào?",
+  "processingTimeMs": 980,
+  "toolsUsed": [
+    {
+      "toolId": "inventory.list",
+      "arguments": {
+        "status": "in_stock",
+        "limit": 50
+      }
+    }
+  ],
+  "data": {
+    "toolId": "inventory.list",
+    "items": [
+      {
+        "productId": "33333333-3333-3333-3333-333333333331",
+        "name": "Sữa chua Vinamilk",
+        "category": "Thực phẩm",
+        "quantity": 2,
+        "unit": "hộp",
+        "expiryDate": "2026-09-22",
+        "expiryLevel": "soon",
+        "status": "in_stock"
+      },
+      {
+        "productId": "33333333-3333-3333-3333-333333333333",
+        "name": "Nước mắm",
+        "category": "Gia vị",
+        "quantity": 1,
+        "unit": "chai",
+        "expiryDate": "2027-03-18",
+        "expiryLevel": "ok",
+        "status": "in_stock"
+      }
+    ],
+    "total": 2
+  },
+  "message": "Trong nhà đang còn 2 sản phẩm đang có hàng.",
+  "warnings": []
+}
