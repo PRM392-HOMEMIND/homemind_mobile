@@ -612,3 +612,5 @@ class RemoteAuthService
     role: 'member',
   );
 }
+
+// Handled by Tran Gia Phu
