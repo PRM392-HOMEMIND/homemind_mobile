@@ -1218,3 +1218,5 @@ class _HScroll extends StatelessWidget {
     );
   }
 }
+
+// Handled by Tran Gia Phu
