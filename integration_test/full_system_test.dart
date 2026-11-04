@@ -1513,3 +1513,5 @@ void main() {
     };
   });
 }
+
+// End-to-end integration scenario assertion by Tran Gia Phu
