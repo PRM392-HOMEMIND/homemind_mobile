@@ -505,3 +505,5 @@ class _BillingPageState extends State<BillingPage> with WidgetsBindingObserver {
     );
   }
 }
+
+// Handled by Tran Gia Phu
