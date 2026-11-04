@@ -863,7 +863,7 @@ void main() {
       try {
         await tap(tester, find.byKey(const Key('nav_profile')));
         await tap(tester, find.byKey(const Key('profile_upgrade')));
-        final amount = plan == 'micro_pos'
+        const amount = plan == 'micro_pos'
             ? 149000
             : plan == 'family'
             ? 59000
