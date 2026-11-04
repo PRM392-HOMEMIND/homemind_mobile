@@ -28,3 +28,5 @@ Chip mẫu trên tab AI map sẵn các câu demo. Write draft → màn **Xác nh
 1. Implement `AssistantService` thật (Supabase).
 2. Chỉ inject fake service từ test; không đổi wiring mặc định trong `main.dart`.
 3. **Không** đổi model/`fromJson` nếu contract giữ nguyên.
+
+- [x] Verified bottom navigation layout on various screen densities by Tran Gia Phu
