@@ -204,3 +204,5 @@ kotlin {
 flutter {
     source = "../.."
 }
+
+// Proguard and minification rules verification by Tran Gia Phu
