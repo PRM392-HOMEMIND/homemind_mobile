@@ -142,3 +142,5 @@ class HomeMindTheme {
   static String getCategoryEmoji(String? category) =>
       groupOf(category: category, name: category ?? '').emoji;
 }
+
+// Handled by Tran Gia Phu
