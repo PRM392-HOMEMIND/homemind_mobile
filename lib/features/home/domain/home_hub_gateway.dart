@@ -51,7 +51,7 @@ class HomeHubGateway {
   Future<Map<String, Object?>> readBatch({String? cutoff}) {
     final send = write;
     if (send == null) throw UnsupportedError('Notification batch unavailable');
-    return send('$_root/notifications/read-all', {'cutoff': ?cutoff});
+    return send('$_root/notifications/read-all', {if (cutoff != null) 'cutoff': cutoff});
   }
 
   final String scope, workspaceId;
@@ -65,7 +65,7 @@ class HomeHubGateway {
     final query = Uri(
       queryParameters: {
         'limit': '$limit',
-        'cursor': ?cursor,
+        if (cursor != null) 'cursor': cursor,
         'unread': '$unread',
       },
     ).query;
@@ -87,7 +87,7 @@ class HomeHubGateway {
         'q': q,
         'limit': '20',
         'filter': filter,
-        'cursor': ?cursor,
+        if (cursor != null) 'cursor': cursor,
       },
     ).query;
     return request('GET', '$_root/search?$query');

@@ -154,10 +154,10 @@ class BackendAssistantService
       'PATCH',
       '/me',
       body: {
-        'displayName': ?displayName,
-        'phone': ?phone,
-        'address': ?address,
-        'language': ?language,
+        if (displayName != null) 'displayName': displayName,
+        if (phone != null) 'phone': phone,
+        if (address != null) 'address': address,
+        if (language != null) 'language': language,
       },
       expectedUserId: _profile.userId,
     );
@@ -293,11 +293,11 @@ class BackendAssistantService
       'POST',
       '/workspaces/$_workspaceId/shopping-items/$itemId/receive',
       body: {
-        'quantity': ?quantity,
-        'unit': ?unit,
-        'expiryDate': ?expiryDate,
-        'priceVnd': ?priceVnd,
-        'storageLocation': ?storageLocation,
+        if (quantity != null) 'quantity': quantity,
+        if (unit != null) 'unit': unit,
+        if (expiryDate != null) 'expiryDate': expiryDate,
+        if (priceVnd != null) 'priceVnd': priceVnd,
+        if (storageLocation != null) 'storageLocation': storageLocation,
       },
       idempotencyKey: _uuid(),
     );
@@ -327,7 +327,7 @@ class BackendAssistantService
     await _request(
       'PATCH',
       '/workspaces/$_workspaceId/lots/${Uri.encodeComponent(lotId)}',
-      body: {'priceVnd': ?priceVnd, 'storageLocation': ?storageLocation},
+      body: {if (priceVnd != null) 'priceVnd': priceVnd, if (storageLocation != null) 'storageLocation': storageLocation},
     );
   }
 
@@ -530,7 +530,7 @@ class BackendAssistantService
       'Authorization': 'Bearer $token',
       'Accept': 'application/json',
       if (body != null) 'Content-Type': 'application/json',
-      'Idempotency-Key': ?idempotencyKey,
+      if (idempotencyKey != null) 'Idempotency-Key': idempotencyKey,
       if (path.contains('/billing') || path.endsWith('/upgrade-requests'))
         'X-HomeMind-Distribution': EnvConfig.distribution,
     };

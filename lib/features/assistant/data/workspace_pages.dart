@@ -28,7 +28,7 @@ class WorkspacePages {
         'q': q,
         'limit': '30',
         'includeSuggestions': '${status == 'needed'}',
-        'cursor': ?cursor,
+        if (cursor != null) 'cursor': cursor,
       },
     ).query;
     final data = await request(
@@ -61,7 +61,7 @@ class WorkspacePages {
         'month': month,
         'scope': scope,
         'limit': '20',
-        'cursor': ?cursor,
+        if (cursor != null) 'cursor': cursor,
       },
     ).query;
     return SpendingSummary.fromJson(

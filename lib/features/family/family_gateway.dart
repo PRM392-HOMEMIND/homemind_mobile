@@ -29,7 +29,7 @@ class FamilyGateway {
     bool outgoing = false,
     String? cursor,
   }) {
-    final query = Uri(queryParameters: {'limit': '20', 'cursor': ?cursor})
+    final query = Uri(queryParameters: {'limit': '20', if (cursor != null) 'cursor': cursor})
         .query;
     return request(
       'GET',

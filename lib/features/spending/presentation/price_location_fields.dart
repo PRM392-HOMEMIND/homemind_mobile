@@ -28,8 +28,8 @@ class PriceLocationController extends ChangeNotifier {
 
   /// Phần thêm vào payload: chỉ có khóa khi người dùng thực sự nhập.
   Map<String, Object?> toArguments() => {
-    'priceVnd': ?priceVnd,
-    'storageLocation': ?_location,
+    if (priceVnd != null) 'priceVnd': priceVnd,
+    if (_location != null) 'storageLocation': _location,
   };
 
   @override
