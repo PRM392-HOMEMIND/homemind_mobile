@@ -70,3 +70,5 @@ class UnavailableSpeechRecognitionService implements SpeechRecognitionService {
   @override
   Future<void> dispose() async {}
 }
+
+// Handled by Tran Gia Phu
