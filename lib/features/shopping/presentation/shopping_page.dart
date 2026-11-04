@@ -1242,3 +1242,5 @@ class _ShoppingCard extends StatelessWidget {
 
 String _fmtQty(num value) =>
     value == value.roundToDouble() ? value.toInt().toString() : '$value';
+
+// Handled by Tran Gia Phu
