@@ -36,3 +36,5 @@ linter:
 
 # Additional information about this file can be found at
 # https://dart.dev/guides/language/analysis-options
+
+# Lint rule adjustments for robust asynchronous state by Tran Gia Phu
