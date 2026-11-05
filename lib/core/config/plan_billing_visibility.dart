@@ -14,7 +14,7 @@ class PlanBillingVisibility extends InheritedWidget {
 
   // Shared by every flavor/platform. No URL, environment default or remote
   // response can enable it. Restore here and rebuild the Flutter app.
-  static const defaultVisible = false;
+  static const defaultVisible = true;
   final bool visible;
   final WidgetBuilder? fallbackBuilder;
 

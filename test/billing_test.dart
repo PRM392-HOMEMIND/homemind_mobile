@@ -434,10 +434,11 @@ void main() {
           return {'id': validId};
         },
       );
-      if (!EnvConfig.externalBillingAllowedFor(
-        debug: policy == 'debug',
-        distribution: policy == 'direct' ? 'direct' : 'store',
-      )) {
+      if (!EnvConfig.externalBillingAllowed ||
+          !EnvConfig.externalBillingAllowedFor(
+            debug: policy == 'debug',
+            distribution: policy == 'direct' ? 'direct' : 'store',
+          )) {
         expect(await service.pending(), isNull);
         await expectLater(
           service.create('personal-month-v2'),
@@ -637,11 +638,11 @@ void main() {
       );
     },
   );
-  test('payment-disabled policy cannot be bypassed by direct distribution', () {
+  test('direct distribution allows external billing while store remains disabled', () {
     expect(EnvConfig.externalBillingAllowedFor(debug: false), false);
     expect(
       EnvConfig.externalBillingAllowedFor(debug: false, distribution: 'direct'),
-      false,
+      true,
     );
     expect(
       EnvConfig.externalBillingAllowedFor(

@@ -10,7 +10,7 @@ class EnvConfig {
   static bool externalBillingAllowedFor({
     required bool debug,
     String distribution = 'store',
-  }) => false; // Temporary owner policy: no mobile channel may purchase.
+  }) => distribution == 'direct';
   static const _definedBackendBaseUrl = String.fromEnvironment(
     'BACKEND_BASE_URL',
   );

@@ -193,12 +193,11 @@ void main() {
     }
   });
   test(
-    'payment-disabled policy rejects every channel in debug and release',
+    'direct distribution allows external billing while other channels remain disabled',
     () {
       for (final debug in [true, false]) {
         for (final channel in [
           'store',
-          'direct',
           '',
           'unknown',
           'DIRECT',
@@ -218,7 +217,7 @@ void main() {
             debug: debug,
             distribution: 'direct',
           ),
-          false,
+          true,
         );
       }
     },

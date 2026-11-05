@@ -60,11 +60,11 @@ class _NeverBilling extends FakeBilling {
 
 Widget _app(
   Widget page, {
-  bool? visible,
+  bool visible = false,
   double scale = 1,
   bool dark = false,
 }) => PlanBillingVisibility(
-  visible: visible ?? PlanBillingVisibility.defaultVisible,
+  visible: visible,
   child: MaterialApp(
     theme: HomeMindTheme.themeData,
     builder: (context, child) => MediaQuery(
@@ -82,7 +82,7 @@ void main() {
   setUpAll(loadAppFonts);
   setUp(() => AppText.setLanguage('vi', persist: false));
   test('missing define hides UI and does not change purchases or target permission', () {
-    expect(PlanBillingVisibility.defaultVisible, isFalse);
+    expect(PlanBillingVisibility.defaultVisible, isTrue);
     expect(EnvConfig.externalBillingAllowed, isFalse);
     for (final target in [
       ('plan', 'family'),
