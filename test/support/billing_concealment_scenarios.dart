@@ -97,6 +97,7 @@ class NoBillingCalls implements BillingGateway {
 
 Widget concealmentApp(ConcealmentService service, Widget page) =>
     PlanBillingVisibility(
+      visible: false,
       fallbackBuilder: (_) => ProfilePage(service: service),
       child: MaterialApp(theme: HomeMindTheme.themeData, home: page),
     );
